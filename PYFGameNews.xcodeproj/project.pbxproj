@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E98291132059453100EFECAA /* CAPSPageMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = E98291112059453100EFECAA /* CAPSPageMenu.m */; };
+		E9B17E9C2059270700A99A02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B17E9B2059270700A99A02 /* AppDelegate.m */; };
+		E9B17E9F2059270700A99A02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B17E9E2059270700A99A02 /* ViewController.m */; };
+		E9B17EA22059270700A99A02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B17EA02059270700A99A02 /* Main.storyboard */; };
+		E9B17EA42059270700A99A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9B17EA32059270700A99A02 /* Assets.xcassets */; };
+		E9B17EA72059270700A99A02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B17EA52059270700A99A02 /* LaunchScreen.storyboard */; };
+		E9B17EAA2059270700A99A02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B17EA92059270700A99A02 /* main.m */; };
+		E9B17EB42059270700A99A02 /* PYFGameNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B17EB32059270700A99A02 /* PYFGameNewsTests.m */; };
+		E9B17EBF2059270700A99A02 /* PYFGameNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B17EBE2059270700A99A02 /* PYFGameNewsUITests.m */; };
+		E9CB0DA8205A4C91008E4877 /* PYFHomePageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CB0DA7205A4C91008E4877 /* PYFHomePageTableViewCell.m */; };
+		E9D9FC26206382C30060C3E5 /* PYFSideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D9FC25206382C30060C3E5 /* PYFSideBar.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9B17EB02059270700A99A02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9B17E8F2059270700A99A02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9B17E962059270700A99A02;
+			remoteInfo = PYFGameNews;
+		};
+		E9B17EBB2059270700A99A02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9B17E8F2059270700A99A02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9B17E962059270700A99A02;
+			remoteInfo = PYFGameNews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E98291112059453100EFECAA /* CAPSPageMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAPSPageMenu.m; sourceTree = "<group>"; };
+		E98291122059453100EFECAA /* CAPSPageMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPSPageMenu.h; sourceTree = "<group>"; };
+		E9B17E972059270700A99A02 /* PYFGameNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PYFGameNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B17E9A2059270700A99A02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E9B17E9B2059270700A99A02 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E9B17E9D2059270700A99A02 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E9B17E9E2059270700A99A02 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E9B17EA12059270700A99A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9B17EA32059270700A99A02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9B17EA62059270700A99A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9B17EA82059270700A99A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9B17EA92059270700A99A02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9B17EAF2059270700A99A02 /* PYFGameNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PYFGameNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B17EB32059270700A99A02 /* PYFGameNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYFGameNewsTests.m; sourceTree = "<group>"; };
+		E9B17EB52059270700A99A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9B17EBA2059270700A99A02 /* PYFGameNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PYFGameNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B17EBE2059270700A99A02 /* PYFGameNewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYFGameNewsUITests.m; sourceTree = "<group>"; };
+		E9B17EC02059270700A99A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9BE3A39206A183F00A174C8 /* PYFSideBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYFSideBar.h; sourceTree = "<group>"; };
+		E9CB0DA6205A4C91008E4877 /* PYFHomePageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYFHomePageTableViewCell.h; sourceTree = "<group>"; };
+		E9CB0DA7205A4C91008E4877 /* PYFHomePageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYFHomePageTableViewCell.m; sourceTree = "<group>"; };
+		E9D9FC25206382C30060C3E5 /* PYFSideBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYFSideBar.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9B17E942059270700A99A02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B17EAC2059270700A99A02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B17EB72059270700A99A02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E98291102059450E00EFECAA /* CAPSPageMenu */ = {
+			isa = PBXGroup;
+			children = (
+				E98291122059453100EFECAA /* CAPSPageMenu.h */,
+				E98291112059453100EFECAA /* CAPSPageMenu.m */,
+			);
+			path = CAPSPageMenu;
+			sourceTree = "<group>";
+		};
+		E9B17E8E2059270700A99A02 = {
+			isa = PBXGroup;
+			children = (
+				E9B17E992059270700A99A02 /* PYFGameNews */,
+				E9B17EB22059270700A99A02 /* PYFGameNewsTests */,
+				E9B17EBD2059270700A99A02 /* PYFGameNewsUITests */,
+				E9B17E982059270700A99A02 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9B17E982059270700A99A02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9B17E972059270700A99A02 /* PYFGameNews.app */,
+				E9B17EAF2059270700A99A02 /* PYFGameNewsTests.xctest */,
+				E9B17EBA2059270700A99A02 /* PYFGameNewsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9B17E992059270700A99A02 /* PYFGameNews */ = {
+			isa = PBXGroup;
+			children = (
+				E9D9FC1D2063821E0060C3E5 /* Views */,
+				E98291102059450E00EFECAA /* CAPSPageMenu */,
+				E9B17ECD20592EF200A99A02 /* Cells */,
+				E9B17ECC20592ED600A99A02 /* Controllers */,
+				E9B17E9A2059270700A99A02 /* AppDelegate.h */,
+				E9B17E9B2059270700A99A02 /* AppDelegate.m */,
+				E9B17EA02059270700A99A02 /* Main.storyboard */,
+				E9B17EA32059270700A99A02 /* Assets.xcassets */,
+				E9B17EA52059270700A99A02 /* LaunchScreen.storyboard */,
+				E9B17EA82059270700A99A02 /* Info.plist */,
+				E9B17EA92059270700A99A02 /* main.m */,
+			);
+			path = PYFGameNews;
+			sourceTree = "<group>";
+		};
+		E9B17EB22059270700A99A02 /* PYFGameNewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9B17EB32059270700A99A02 /* PYFGameNewsTests.m */,
+				E9B17EB52059270700A99A02 /* Info.plist */,
+			);
+			path = PYFGameNewsTests;
+			sourceTree = "<group>";
+		};
+		E9B17EBD2059270700A99A02 /* PYFGameNewsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E9B17EBE2059270700A99A02 /* PYFGameNewsUITests.m */,
+				E9B17EC02059270700A99A02 /* Info.plist */,
+			);
+			path = PYFGameNewsUITests;
+			sourceTree = "<group>";
+		};
+		E9B17ECC20592ED600A99A02 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E9B17E9D2059270700A99A02 /* ViewController.h */,
+				E9B17E9E2059270700A99A02 /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E9B17ECD20592EF200A99A02 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E9CB0DA6205A4C91008E4877 /* PYFHomePageTableViewCell.h */,
+				E9CB0DA7205A4C91008E4877 /* PYFHomePageTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E9D9FC1D2063821E0060C3E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9D9FC25206382C30060C3E5 /* PYFSideBar.m */,
+				E9BE3A39206A183F00A174C8 /* PYFSideBar.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9B17E962059270700A99A02 /* PYFGameNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9B17EC32059270700A99A02 /* Build configuration list for PBXNativeTarget "PYFGameNews" */;
+			buildPhases = (
+				E9B17E932059270700A99A02 /* Sources */,
+				E9B17E942059270700A99A02 /* Frameworks */,
+				E9B17E952059270700A99A02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PYFGameNews;
+			productName = PYFGameNews;
+			productReference = E9B17E972059270700A99A02 /* PYFGameNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9B17EAE2059270700A99A02 /* PYFGameNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9B17EC62059270700A99A02 /* Build configuration list for PBXNativeTarget "PYFGameNewsTests" */;
+			buildPhases = (
+				E9B17EAB2059270700A99A02 /* Sources */,
+				E9B17EAC2059270700A99A02 /* Frameworks */,
+				E9B17EAD2059270700A99A02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9B17EB12059270700A99A02 /* PBXTargetDependency */,
+			);
+			name = PYFGameNewsTests;
+			productName = PYFGameNewsTests;
+			productReference = E9B17EAF2059270700A99A02 /* PYFGameNewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E9B17EB92059270700A99A02 /* PYFGameNewsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9B17EC92059270700A99A02 /* Build configuration list for PBXNativeTarget "PYFGameNewsUITests" */;
+			buildPhases = (
+				E9B17EB62059270700A99A02 /* Sources */,
+				E9B17EB72059270700A99A02 /* Frameworks */,
+				E9B17EB82059270700A99A02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9B17EBC2059270700A99A02 /* PBXTargetDependency */,
+			);
+			name = PYFGameNewsUITests;
+			productName = PYFGameNewsUITests;
+			productReference = E9B17EBA2059270700A99A02 /* PYFGameNewsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9B17E8F2059270700A99A02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "彭宇峰";
+				TargetAttributes = {
+					E9B17E962059270700A99A02 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E9B17EAE2059270700A99A02 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E9B17E962059270700A99A02;
+					};
+					E9B17EB92059270700A99A02 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E9B17E962059270700A99A02;
+					};
+				};
+			};
+			buildConfigurationList = E9B17E922059270700A99A02 /* Build configuration list for PBXProject "PYFGameNews" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9B17E8E2059270700A99A02;
+			productRefGroup = E9B17E982059270700A99A02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9B17E962059270700A99A02 /* PYFGameNews */,
+				E9B17EAE2059270700A99A02 /* PYFGameNewsTests */,
+				E9B17EB92059270700A99A02 /* PYFGameNewsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9B17E952059270700A99A02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B17EA72059270700A99A02 /* LaunchScreen.storyboard in Resources */,
+				E9B17EA42059270700A99A02 /* Assets.xcassets in Resources */,
+				E9B17EA22059270700A99A02 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B17EAD2059270700A99A02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B17EB82059270700A99A02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9B17E932059270700A99A02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B17E9F2059270700A99A02 /* ViewController.m in Sources */,
+				E9CB0DA8205A4C91008E4877 /* PYFHomePageTableViewCell.m in Sources */,
+				E9D9FC26206382C30060C3E5 /* PYFSideBar.m in Sources */,
+				E9B17EAA2059270700A99A02 /* main.m in Sources */,
+				E98291132059453100EFECAA /* CAPSPageMenu.m in Sources */,
+				E9B17E9C2059270700A99A02 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B17EAB2059270700A99A02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B17EB42059270700A99A02 /* PYFGameNewsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B17EB62059270700A99A02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B17EBF2059270700A99A02 /* PYFGameNewsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9B17EB12059270700A99A02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9B17E962059270700A99A02 /* PYFGameNews */;
+			targetProxy = E9B17EB02059270700A99A02 /* PBXContainerItemProxy */;
+		};
+		E9B17EBC2059270700A99A02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9B17E962059270700A99A02 /* PYFGameNews */;
+			targetProxy = E9B17EBB2059270700A99A02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9B17EA02059270700A99A02 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9B17EA12059270700A99A02 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9B17EA52059270700A99A02 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9B17EA62059270700A99A02 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9B17EC12059270700A99A02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E9B17EC22059270700A99A02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9B17EC42059270700A99A02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EV29GH4B3C;
+				INFOPLIST_FILE = PYFGameNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pyf.PYFGameNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9B17EC52059270700A99A02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EV29GH4B3C;
+				INFOPLIST_FILE = PYFGameNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pyf.PYFGameNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E9B17EC72059270700A99A02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EV29GH4B3C;
+				INFOPLIST_FILE = PYFGameNewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pyf.PYFGameNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PYFGameNews.app/PYFGameNews";
+			};
+			name = Debug;
+		};
+		E9B17EC82059270700A99A02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EV29GH4B3C;
+				INFOPLIST_FILE = PYFGameNewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pyf.PYFGameNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PYFGameNews.app/PYFGameNews";
+			};
+			name = Release;
+		};
+		E9B17ECA2059270700A99A02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EV29GH4B3C;
+				INFOPLIST_FILE = PYFGameNewsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pyf.PYFGameNewsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PYFGameNews;
+			};
+			name = Debug;
+		};
+		E9B17ECB2059270700A99A02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EV29GH4B3C;
+				INFOPLIST_FILE = PYFGameNewsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pyf.PYFGameNewsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PYFGameNews;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9B17E922059270700A99A02 /* Build configuration list for PBXProject "PYFGameNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9B17EC12059270700A99A02 /* Debug */,
+				E9B17EC22059270700A99A02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9B17EC32059270700A99A02 /* Build configuration list for PBXNativeTarget "PYFGameNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9B17EC42059270700A99A02 /* Debug */,
+				E9B17EC52059270700A99A02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9B17EC62059270700A99A02 /* Build configuration list for PBXNativeTarget "PYFGameNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9B17EC72059270700A99A02 /* Debug */,
+				E9B17EC82059270700A99A02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9B17EC92059270700A99A02 /* Build configuration list for PBXNativeTarget "PYFGameNewsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9B17ECA2059270700A99A02 /* Debug */,
+				E9B17ECB2059270700A99A02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9B17E8F2059270700A99A02 /* Project object */;
+}
