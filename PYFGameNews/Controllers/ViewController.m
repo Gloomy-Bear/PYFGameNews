@@ -56,7 +56,7 @@ static CGFloat currentPanY = 0;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+//设置侧边栏
 - (void)setUpSideBar {
     _sideBar = PYFSideBar.instance;
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
@@ -70,6 +70,7 @@ static CGFloat currentPanY = 0;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapToCloseSideBar:)];
     [self.view addGestureRecognizer:tap];
 }
+//设置导航栏
 - (void)setUpNavigationBar {
     [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
@@ -77,6 +78,7 @@ static CGFloat currentPanY = 0;
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[self resizeImage:[UIImage imageNamed:@"Profile"] withSize:CGSizeMake(20, 20)] style:UIBarButtonItemStylePlain target:self action:@selector(openSideBar)];
 }
+// 调整图片大小
 
 - (UIImage*)resizeImage:(UIImage*)image withSize:(CGSize)size{
     UIGraphicsBeginImageContext(CGSizeMake(size.width, size.height));
@@ -85,6 +87,7 @@ static CGFloat currentPanY = 0;
     UIGraphicsEndImageContext();
     return resizedImage;
 }
+//设置全屏的scrollView 内部嵌套了主体新闻的tableView（也是scrollView）和顶部新闻的scrollView
 - (void)setUpMainScrollView {
     _mainScrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
     _mainScrollView.contentSize = CGSizeMake(WIDTH, HEIGHT + ARTICLEVIEW_HEIGHT - NAVIGATIONBAR_HEIGHT - STATUSBAR_HEIGHT);
@@ -96,6 +99,7 @@ static CGFloat currentPanY = 0;
     _mainScrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
 }
 
+//设置主体的tableView（显示新闻
 - (void)setUpNews {
     _newsTable = [[UITableView alloc] initWithFrame:CGRectMake(0, (ARTICLEVIEW_HEIGHT + PAGEMENU_HEIGHT), WIDTH, HEIGHT - (NAVIGATIONBAR_HEIGHT + STATUSBAR_HEIGHT)) style:UITableViewStylePlain];
     
@@ -116,6 +120,7 @@ static CGFloat currentPanY = 0;
     [_newsTable registerClass:[PYFHomePageTableViewCell class] forCellReuseIdentifier:homePageReuseIdentifier];
 }
 
+// 设置顶部新闻
 - (void)setUpArticles {
     _articleScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, ARTICLEVIEW_HEIGHT)];
     _articleScrollView.pagingEnabled = YES;
@@ -154,6 +159,7 @@ static CGFloat currentPanY = 0;
     [_mainScrollView addSubview:_articleScrollView];
 }
 
+//返回点击的图片返回相对文章
 
 - (void)clickTopArticleImageView {
     UIView *view;
@@ -167,12 +173,13 @@ static CGFloat currentPanY = 0;
     }
 }
 
+// 设置拖拽手势
 - (void)setUpPanGesture {
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognizerActionWithRecognizer:)];
     pan.delegate = self;
     [_mainScrollView addGestureRecognizer:pan];
 }
-
+//kvo
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
     if (object == _articleScrollView && [keyPath isEqualToString:@"contentOffset"]) {
@@ -180,6 +187,8 @@ static CGFloat currentPanY = 0;
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
     }
 }
+//scrollView已开始滚动
+//scrollView代理
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView {
     if (scrollView == _mainScrollView) {
@@ -241,11 +250,15 @@ static CGFloat currentPanY = 0;
     }
 }
 
+//点击关闭侧边栏，只要tap的位置不在侧边栏内
+
 - (void)tapToCloseSideBar:(UITapGestureRecognizer*)tap{
     if (!_sideBar.isHidden && tap.view != _sideBar) {
         [self closeSideBar];
     }
 }
+
+// 根据_sideBar是否隐藏判断应该打开侧边栏还是关闭侧边栏
 - (void)toggle {
     if (_sideBar.isHidden) {
         [self openSideBar];
@@ -254,6 +267,7 @@ static CGFloat currentPanY = 0;
     }
 }
 
+// 打开侧边栏
 - (void)openSideBar {
     [_sideBar.layer removeAnimationForKey:@"moveBack"];
     _sideBar.hidden = NO;
@@ -263,6 +277,7 @@ static CGFloat currentPanY = 0;
     [self moveView:_sideBar From:_sideBar.layer.position.x To:_sideBar.layer.position.x + _sideBar.bounds.size.width Duration:0.3 forKeyPath:@"position.x" forAnimationName:@"move"];
 }
 
+// 关闭侧边栏
 - (void)closeSideBar {
     [self moveView:_sideBar From:_sideBar.layer.position.x + _sideBar.bounds.size.width To:_sideBar.layer.position.x Duration:0.3 forKeyPath:@"position.x" forAnimationName:@"moveBack"];
     NSLog(@"%f",_sideBar.bounds.origin.x);
@@ -271,6 +286,8 @@ static CGFloat currentPanY = 0;
     });
 }
 
+// 参数
+// 将view 在 time 秒内，从 a 移动到 b，动画的别名为 name
 - (void)moveView:(UIView*)view From:(CGFloat)a To:(CGFloat)b Duration:(CFTimeInterval)time forKeyPath:(NSString *)path forAnimationName:(NSString*)name{
     CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:path];
     anim.fromValue = [NSNumber numberWithFloat:a];
@@ -286,18 +303,23 @@ static CGFloat currentPanY = 0;
         [self openSideBar];
     }
 }
+
+//tableView 代理 设置section分区数量
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
+//tableView 代理 设置cell数量
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 10;
 }
 
+//tableView 代理 设置cell高度
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return NEWSCELL_HEIGHT;
 }
 
+//根据indexPath设置cell中新闻内容
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     PYFHomePageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:homePageReuseIdentifier forIndexPath:indexPath];
     if (!cell) {
@@ -306,32 +328,18 @@ static CGFloat currentPanY = 0;
     return cell;
 }
 
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    UITouch *touch = [touches anyObject];
-    if (touch.view == self.view) {
-        NSLog(@"AAA");
-    } else {
-        NSLog(@"VVV");
-    }
-}
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    UITouch *touch = [touches anyObject];
-    if (touch.view == self.view) {
-        NSLog(@"AAA");
-    } else {
-        NSLog(@"VVV");
-    }
-}
-
+//UIGestureRecognizer 代理  设置手势识别的时候是否接受touch
 -(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
     return YES;
 }
 
+//UIGestureRecognizer 代理 设置是否同时识别其他手势
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
     return YES;
 }
 
+// 设置侧边栏头像
 - (void)setUpPicProfile{
     // getPicProfileWithUserID()
     _sideBar.picProfile.image = [UIImage imageNamed:@"picProfile"];
